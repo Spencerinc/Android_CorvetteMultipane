@@ -99,7 +99,7 @@ public class TitlesFragment extends ListFragment
             DetailsFragment details = (DetailsFragment)getFragmentManager().findFragmentById(R.id.details);
 
             // If the index hasn't been assigned, then assign it
-            if(details == null || details.getShowIndex() != index)
+            if(details == null || details.getShownIndex() != index)
             {
                 // Assign the current index to details
                 details = DetailsFragment.newInstance(index);
